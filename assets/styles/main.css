@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*background-color: #F8F9FD;*/
+@font-face {
+  font-family: "IRANYekanRd";
+  src: url('~/assets/styles/fonts/iranyekan.ttf');
+}
+
+*{
+  direction: rtl;
+  font-family: "IRANYekanRd", serif;
+
+}
+
+
+#pagination a:first-child{
+  @apply p-3 inline-flex items-center bg-white text-sm font-medium border text-[#606060] hover:bg-gray-50 rounded-md;
+}
+#pagination a:last-child{
+  @apply p-3 inline-flex items-center bg-white text-sm font-medium border text-[#606060] hover:bg-gray-50 rounded-md;
+}
+
+#pagination a {
+  @apply py-2 px-4 bg-white text-gray-500 hover:bg-gray-50 inline-flex items-center border text-sm font-medium rounded-md;
+}
+
+#pagination .active {
+  @apply bg-[#2C0531] rounded-md text-white !important;
+}
+
+
+.vueperslides__track-inner{
+  display: flex;
+}

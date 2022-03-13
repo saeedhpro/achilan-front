@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1320" height="440"
+     viewBox="0 0 1320 440">
+  <defs>
+    <style>
+      .abg{fill:#2c0531;}.bbg{fill:#ba4b30;}.cbg{clip-path:url(#a);}.dbg{fill:none;stroke:#ba4b30;stroke-linecap:round;stroke-width:3px;}.ebg,.fbg{fill:#fff;}.ebg{opacity:0.08;}.fbg{opacity:0.06;}
+    </style>
+    <clipPath id="a">
+      <path class="abg"
+            d="M293.214,2.62A6,6,0,0,1,298.171,0H873a6,6,0,0,1,6,6V434a6,6,0,0,1-6,6H6.353A6,6,0,0,1,1.4,430.62Z"
+            transform="translate(501 1485)"/>
+    </clipPath>
+  </defs>
+  <g transform="translate(-60 -1485)">
+    <path class="bbg"
+          d="M0,6A6,6,0,0,1,6,0H708.647A6,6,0,0,1,713.6,9.38l-291.819,428a6,6,0,0,1-4.957,2.62H6a6,6,0,0,1-6-6Z"
+          transform="translate(60 1485)"/>
+    <path class="abg"
+          d="M293.214,2.62A6,6,0,0,1,298.171,0H873a6,6,0,0,1,6,6V434a6,6,0,0,1-6,6H6.353A6,6,0,0,1,1.4,430.62Z"
+          transform="translate(501 1485)"/>
+    <g class="cbg">
+      <line class="dbg" y1="281.718" x2="192" transform="translate(613.5 1503.782)"/>
+      <rect class="ebg" width="160" height="160" rx="4" transform="translate(1340 1851.718) rotate(60)"/>
+      <rect class="ebg" width="80" height="80" rx="4" transform="translate(1004 1523) rotate(60)"/>
+      <rect class="ebg" width="160" height="160" rx="4" transform="translate(1273 1842.718) rotate(60)"/>
+      <rect class="fbg" width="160" height="160" rx="4" transform="translate(652 1747.436) rotate(60)"/>
+      <rect class="ebg" width="80" height="80" rx="4" transform="translate(982 1517) rotate(60)"/>
+    </g>
+  </g>
+</svg>
