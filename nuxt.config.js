@@ -24,10 +24,10 @@ export default {
   ],
 
   server: {
-    https: {
-      key: fs.readFileSync(path.resolve(__dirname, 'server.key')),
-      cert: fs.readFileSync(path.resolve(__dirname, 'server.crt'))
-    }
+    // https: {
+    //   key: fs.readFileSync(path.resolve(__dirname, 'server.key')),
+    //   cert: fs.readFileSync(path.resolve(__dirname, 'server.crt'))
+    // }
   },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -63,5 +63,5 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+  },
 }

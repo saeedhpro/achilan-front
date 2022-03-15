@@ -22,13 +22,13 @@
           <thead>
           <tr class="border-b border-gray-200 bg-[#4B1752]">
             <th class="p-3 text-white font-bold text-sm tracking-wider uppercase text-right">
-              کد محصول
+              ردیف
             </th>
             <th class="p-3 text-white font-bold text-sm tracking-wider uppercase text-center">
-              عنوان محصول
+              عنوان
             </th>
             <th class="p-3 text-white font-bold text-sm tracking-wider uppercase text-center">
-              عکس محصول
+              عکس
             </th>
 
             <th class="p-3 text-white font-bold text-sm tracking-wider uppercase text-center">
@@ -39,7 +39,7 @@
           <!-- END Table Header -->
 
           <!-- Table Body -->
-          <tbody v-for="i in getFrames" :key="i">
+          <tbody v-for="(i,n) in getFrames" :key="n">
           <!--modal fo edit product-->
           <div v-if="editModal" class="top-36 w-full flex justify-center absolute rounded z-20" v-cloak>
 
@@ -63,7 +63,7 @@
           <tr class="border-b border-gray-200 hover:bg-gray-50" @click="">
             <td class="p-3 text-center">
               <p class="font-medium">
-               {{ i.id}}
+               {{ n+1}}
               </p>
             </td>
             <td class="p-3 text-center">

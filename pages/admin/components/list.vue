@@ -39,7 +39,7 @@
           <!-- END Table Header -->
 
           <!-- Table Body -->
-          <tbody v-for="i in ingredients" :key="i">
+          <tbody v-for="(i,n) in ingredients" :key="n">
           <!--modal fo edit product-->
           <div v-if="editModal" class="top-36 w-full flex justify-center absolute rounded z-20" v-cloak>
 
@@ -63,7 +63,7 @@
           <tr class="border-b border-gray-200 hover:bg-gray-50" @click="">
             <td class="p-3 text-center">
               <p class="font-medium">
-               {{ i.id}}
+               {{ n++}}
               </p>
             </td>
             <td class="p-3 text-center">

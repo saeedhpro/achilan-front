@@ -3,14 +3,14 @@
 
     <div class="mx-auto py-6 px-5 max-w-7xl">
 
-      <h3 class="mr-2 py-2 font-bold text-xl underline decoration-4 decoration-[#FFB508] underline-offset-1">لیست ویدیوها</h3>
+      <h3 class="mr-2 py-2 font-bold text-xl underline decoration-4 decoration-[#FFB508] underline-offset-1">لیست نمونه کارها</h3>
 
       <!--add product-->
       <div class="py-6">
-        <nuxt-link class="py-3 flex justify-center items-center bg-[#4B1752] text-white font-bold rounded hover:bg-[#2C0531]" to="/admin/videos/add">
+        <nuxt-link class="py-3 flex justify-center items-center bg-[#4B1752] text-white font-bold rounded hover:bg-[#2C0531]" to="/admin/portfolios/add">
 
           <svg width="36px" height="36px" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="h-4 w-4" preserveAspectRatio="xMidYMid meet"><path fill="white" d="M31 15H21V5a3 3 0 1 0-6 0v10H5a3 3 0 1 0 0 6h10v10a3 3 0 1 0 6 0V21h10a3 3 0 1 0 0-6z"></path></svg>
-          <p class="pr-2">افزودن ویدیوی جدید</p>
+          <p class="pr-2">افزودن نمونه کار جدید</p>
 
         </nuxt-link>
       </div>
@@ -39,7 +39,7 @@
           <!-- END Table Header -->
 
           <!-- Table Body -->
-          <tbody v-for="i in videos" :key="i">
+          <tbody v-for="i in getPortfolios" :key="i">
           <!--modal fo edit product-->
           <div v-if="editModal" class="top-36 w-full flex justify-center absolute rounded z-20" v-cloak>
 
@@ -161,12 +161,12 @@ export default {
   },
 
   mounted() {
-    this.$store.dispatch('video/getVideos')
+    this.$store.dispatch('video/getPortfolios')
   },
 
   computed: {
-    videos() {
-      return this.$store.getters['video/getVideos']
+    getPortfolios() {
+      return this.$store.getters['video/getPortfolios']
     },
   },
 

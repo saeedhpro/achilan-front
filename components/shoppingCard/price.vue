@@ -20,155 +20,155 @@
 
         <h3 class="pb-6 font-bold underline decoration-4 decoration-[#FFB508] underline-offset-1">سبد خرید</h3>
 
-        <div class="pb-6">
-          <div class="flex items-center">
-            <svg class="max-h-1.5 max-w-1.5" fill="#FFB508" xmlns="http://www.w3.org/2000/svg"
-                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                 viewBox="0 0 6 6" style="enable-background:new 0 0 6 6;" xml:space="preserve">
-                  <rect width="6" height="6"/>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-              <g></g>
-                </svg>
-            <p class="pr-1.5 pb-1 text-sm">مشخصات</p>
-          </div>
-          <div class="rounded bg-[#F7F7F7]">
-            <ul role="list" class="p-4 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4">
+<!--        <div class="pb-6">-->
+<!--          <div class="flex items-center">-->
+<!--            <svg class="max-h-1.5 max-w-1.5" fill="#FFB508" xmlns="http://www.w3.org/2000/svg"-->
+<!--                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"-->
+<!--                 viewBox="0 0 6 6" style="enable-background:new 0 0 6 6;" xml:space="preserve">-->
+<!--                  <rect width="6" height="6"/>-->
+<!--              <g></g>-->
+<!--              <g></g>-->
+<!--              <g></g>-->
+<!--              <g></g>-->
+<!--              <g></g>-->
+<!--              <g></g>-->
+<!--              <g></g>-->
+<!--              <g></g>-->
+<!--              <g></g>-->
+<!--              <g></g>-->
+<!--              <g></g>-->
+<!--              <g></g>-->
+<!--              <g></g>-->
+<!--              <g></g>-->
+<!--              <g></g>-->
+<!--                </svg>-->
+<!--            <p class="pr-1.5 pb-1 text-sm">مشخصات</p>-->
+<!--          </div>-->
+<!--          <div class="rounded bg-[#F7F7F7]">-->
+<!--            <ul role="list" class="p-4 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4">-->
 
-              <li class="col-span-1">
-                <div class="pb-3">
-                  <p class="text-xs rounded text-[#757575]">نوع درب</p>
-                  <div class="flex items-center text-sm">
+<!--              <li class="col-span-1">-->
+<!--                <div class="pb-3">-->
+<!--                  <p class="text-xs rounded text-[#757575]">نوع درب</p>-->
+<!--                  <div class="flex items-center text-sm">-->
 
-                    <p> اسلایدینگ</p>
+<!--                    <p> اسلایدینگ</p>-->
 
-                    <svg class="px-1.5 max-h-1.5 max-w-1.5" fill="#757575" xmlns="http://www.w3.org/2000/svg"
-                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                         viewBox="0 0 6 6" style="enable-background:new 0 0 6 6;" xml:space="preserve">
-                  <rect width="6" height="6"/>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                </svg>
+<!--                    <svg class="px-1.5 max-h-1.5 max-w-1.5" fill="#757575" xmlns="http://www.w3.org/2000/svg"-->
+<!--                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"-->
+<!--                         viewBox="0 0 6 6" style="enable-background:new 0 0 6 6;" xml:space="preserve">-->
+<!--                  <rect width="6" height="6"/>-->
+<!--                      <g></g>-->
+<!--                      <g></g>-->
+<!--                      <g></g>-->
+<!--                      <g></g>-->
+<!--                      <g></g>-->
+<!--                      <g></g>-->
+<!--                      <g></g>-->
+<!--                      <g></g>-->
+<!--                      <g></g>-->
+<!--                      <g></g>-->
+<!--                      <g></g>-->
+<!--                      <g></g>-->
+<!--                      <g></g>-->
+<!--                      <g></g>-->
+<!--                      <g></g>-->
+<!--                </svg>-->
 
-                    <p>چرخشی</p>
+<!--                    <p>چرخشی</p>-->
 
-                  </div>
-                </div>
+<!--                  </div>-->
+<!--                </div>-->
 
-                <div>
-                  <p class="text-xs rounded text-[#757575]">طول درب</p>
+<!--                <div>-->
+<!--                  <p class="text-xs rounded text-[#757575]">طول درب</p>-->
 
-                  <p> 300 سانتی متر</p>
+<!--                  <p> 300 سانتی متر</p>-->
 
-                </div>
+<!--                </div>-->
 
-              </li>
+<!--              </li>-->
 
-              <li class="col-span-1">
-                <div class="pb-3">
-                  <p class="text-xs rounded text-[#757575]">نوع کاربری</p>
+<!--              <li class="col-span-1">-->
+<!--                <div class="pb-3">-->
+<!--                  <p class="text-xs rounded text-[#757575]">نوع کاربری</p>-->
 
-                  <p>آتش نشانی</p>
+<!--                  <p>آتش نشانی</p>-->
 
-                </div>
+<!--                </div>-->
 
-                <div>
-                  <p class="text-xs rounded text-[#757575]">عرض درب</p>
+<!--                <div>-->
+<!--                  <p class="text-xs rounded text-[#757575]">عرض درب</p>-->
 
-                  <p> 280 سانتی متر</p>
+<!--                  <p> 280 سانتی متر</p>-->
 
-                </div>
+<!--                </div>-->
 
-              </li>
+<!--              </li>-->
 
-              <li class="col-span-1">
-                <div class="pb-3">
-                  <p class="text-xs rounded text-[#757575]">نوع شیشه</p>
+<!--              <li class="col-span-1">-->
+<!--                <div class="pb-3">-->
+<!--                  <p class="text-xs rounded text-[#757575]">نوع شیشه</p>-->
 
-                  <p>شیشه نوع سه</p>
+<!--                  <p>شیشه نوع سه</p>-->
 
-                </div>
+<!--                </div>-->
 
-                <div>
-                  <p class="text-xs rounded text-[#757575]">عرض باز شو</p>
+<!--                <div>-->
+<!--                  <p class="text-xs rounded text-[#757575]">عرض باز شو</p>-->
 
-                  <p> 160 سانتی متر</p>
+<!--                  <p> 160 سانتی متر</p>-->
 
-                </div>
+<!--                </div>-->
 
-              </li>
+<!--              </li>-->
 
-              <li class="col-span-1">
-                <div class="pb-3">
-                  <p class="text-xs rounded text-[#757575]">نوع فریم</p>
-                  <div class="flex items-center text-sm">
+<!--              <li class="col-span-1">-->
+<!--                <div class="pb-3">-->
+<!--                  <p class="text-xs rounded text-[#757575]">نوع فریم</p>-->
+<!--                  <div class="flex items-center text-sm">-->
 
-                    <p> فریم نوع دو</p>
+<!--                    <p> فریم نوع دو</p>-->
 
-                    <svg class="px-1.5 max-h-1.5 max-w-1.5" fill="#757575" xmlns="http://www.w3.org/2000/svg"
-                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                         viewBox="0 0 6 6" style="enable-background:new 0 0 6 6;" xml:space="preserve">
-                  <rect width="6" height="6"/>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                      <g></g>
-                </svg>
+<!--                    <svg class="px-1.5 max-h-1.5 max-w-1.5" fill="#757575" xmlns="http://www.w3.org/2000/svg"-->
+<!--                         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"-->
+<!--                         viewBox="0 0 6 6" style="enable-background:new 0 0 6 6;" xml:space="preserve">-->
+<!--                  <rect width="6" height="6"/>-->
+<!--                      <g></g>-->
+<!--                      <g></g>-->
+<!--                      <g></g>-->
+<!--                      <g></g>-->
+<!--                      <g></g>-->
+<!--                      <g></g>-->
+<!--                      <g></g>-->
+<!--                      <g></g>-->
+<!--                      <g></g>-->
+<!--                      <g></g>-->
+<!--                      <g></g>-->
+<!--                      <g></g>-->
+<!--                      <g></g>-->
+<!--                      <g></g>-->
+<!--                      <g></g>-->
+<!--                </svg>-->
 
-                    <p>فریم نوع چهار</p>
+<!--                    <p>فریم نوع چهار</p>-->
 
-                  </div>
-                </div>
+<!--                  </div>-->
+<!--                </div>-->
 
-                <div>
-                  <p class="text-xs rounded text-[#757575]">میزان تردد</p>
+<!--                <div>-->
+<!--                  <p class="text-xs rounded text-[#757575]">میزان تردد</p>-->
 
-                  <p> 300 نفر در روز</p>
+<!--                  <p> 300 نفر در روز</p>-->
 
-                </div>
+<!--                </div>-->
 
-              </li>
+<!--              </li>-->
 
-            </ul>
-          </div>
+<!--            </ul>-->
+<!--          </div>-->
 
-        </div>
+<!--        </div>-->
 
         <div>
           <div class="flex items-center">
@@ -207,7 +207,7 @@
                 </div>
                 <div>
                   <p class="text-sm text-[#757575]">{{ i.product.type.name }}</p>
-                  <p class="pt-1 text-[#282828] font-medium">APS-121 عنوان کالا درب اسلایدینگ مدل</p>
+                  <p class="pt-1 text-[#282828] font-medium">{{ i.product.name}}</p>
                   <p class="pt-1 text-[#282828] font-medium">تعداد: {{ i.number }} عدد</p>
                 </div>
               </div>

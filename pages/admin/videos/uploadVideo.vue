@@ -165,7 +165,7 @@ export default {
         category_id: this.category_id,
       })
         .then(res => {
-          alert("ویدپو با موفقیت ایجاد شد")
+          this.$router.replace('/admin/videos/list')
         })
         .catch(async err => {
           alert("در ایجاد ویدپو مشکلی به وجود آمده است")

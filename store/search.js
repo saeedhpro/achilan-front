@@ -24,6 +24,20 @@ export const actions = {
         return Promise.reject(err)
       })
   },
+
+  getFiles(context, route) {
+    return this.$axios.get(`${route}`)
+      .then((res) => {
+        if (res.status === 401) {
+          throw new Error('Bad credentials')
+        } else {
+          return Promise.resolve(res.data)
+        }
+      })
+      .catch(err => {
+        return Promise.reject(err)
+      })
+  },
 }
 
 export const getters = {

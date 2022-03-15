@@ -4,28 +4,50 @@
     <div class="mx-auto py-6 px-5 max-w-7xl">
 
       <div class="container">
-        <h3 class="mr-2 py-4 font-bold text-xl underline decoration-4 decoration-[#FFB508] underline-offset-1">ایجاد ویدیو جدید</h3>
+        <h3 class="mr-2 py-4 font-bold text-xl underline decoration-4 decoration-[#FFB508] underline-offset-1">ایجاد نمونه کار جدید</h3>
 
         <form @submit.prevent="validate" class="space-y-6">
 
           <div class="space-y-1">
-            <label class="font-medium">عنوان ویدیو</label>
-            <input v-model="name"
+            <label class="font-medium">عنوان نمونه کار</label>
+            <input v-model="portfolio.name"
                    class="w-full block border border-gray-200 rounded px-3 py-2 leading-6 focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
                    type="text" placeholder="عنوان محصول"/>
           </div>
 
+          <div class="space-y-1">
+            <label class="font-medium">توضیحات نمونه کار</label>
+            <input v-model="portfolio.description"
+                   class="w-full block border border-gray-200 rounded px-3 py-2 leading-6 focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
+                   type="text" placeholder="عنوان محصول"/>
+          </div>
 
           <div class="space-y-1">
-            <label class="font-medium">ویدیو</label>
+            <label class="font-medium">نام پروژه</label>
+            <input v-model="portfolio.project_name"
+                   class="w-full block border border-gray-200 rounded px-3 py-2 leading-6 focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
+                   type="text" placeholder="عنوان محصول"/>
+          </div>
+
+          <div class="space-y-1">
+            <label class="font-medium">نظر</label>
+            <input v-model="portfolio.comment"
+                   class="w-full block border border-gray-200 rounded px-3 py-2 leading-6 focus:border-indigo-500 focus:ring focus:ring-indigo-500 focus:ring-opacity-50"
+                   type="text" placeholder="عنوان محصول"/>
+          </div>
+
+          <div class="space-y-1">
+            <label class="font-medium">تصویر شاخص</label>
             <div class="sm:w-full items-center text-center">
               <div class="p-2  upload-box-title-box rounded-lg bg-gray-100 text-center  relative"
                    @click="onUploadClicked">
                 <div class="p-10 text-center flex flex-col border-2 border-dashed border-gray-500 rounded-lg">
                   <div class="upload-box-title-text text-gray-700 ir-medium text-sm">
-                    تصویر مقاله
+                    تصویر شاخص
                   </div>
-                  <div class="my-3 text-gray-600 text-sm">فرمت‌های فایل مورد پذیرش برای تصویر (حداکثر حجم مورد پذیرش: ۱۰ مگابایت)</div>
+                  <div class="my-3 text-gray-600 text-sm">فرمت‌های فایل مورد پذیرش برای تصویر (حداکثر حجم مورد پذیرش: ۱۰
+                    مگابایت)
+                  </div>
                   <div class="my-3 flex justify-center">
                     <div class="px-2 py-1 bg-gray-200 rounded text-gray-600">PNG</div>
                     <div class="px-2 py-1 mx-1 bg-gray-200 rounded text-gray-600">JPG</div>
@@ -34,21 +56,80 @@
                   </div>
                   <div class="my-5 upload-box-title-input">
                     <!--            <img src="/images/upload-icon.png">-->
-                    <div class="flex m-auto w-32 border-2 py-2 px-1 rounded-lg border-solid border-gray-500 text-gray-600 bg-gray-200 justify-center  text-sm">
+                    <div
+                      class="flex m-auto w-32 border-2 py-2 px-1 rounded-lg border-solid border-gray-500 text-gray-600 bg-gray-200 justify-center  text-sm">
+                      <i class="fal fa-upload"></i>
+                      <div class=" mr-2">آپلود تصویر شاخص</div>
+                    </div>
+                    <input ref="upload" accept="image/jpeg,png" multiple type="file" hidden @change="onFile">
+                    <img src=""/>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="space-y-1">
+            <label class="font-medium">تصویر اسلاید</label>
+            <div class="sm:w-full items-center text-center">
+              <div class="p-2  upload-box-title-box rounded-lg bg-gray-100 text-center  relative"
+                   @click="onUploadClickedSlider">
+                <div class="p-10 text-center flex flex-col border-2 border-dashed border-gray-500 rounded-lg">
+                  <div class="upload-box-title-text text-gray-700 ir-medium text-sm">
+                    تصویر اسلایدر
+                  </div>
+                  <div class="my-3 text-gray-600 text-sm">فرمت‌های فایل مورد پذیرش برای تصویر (حداکثر حجم مورد پذیرش: ۱۰
+                    مگابایت)
+                  </div>
+                  <div class="my-3 flex justify-center">
+                    <div class="px-2 py-1 bg-gray-200 rounded text-gray-600">PNG</div>
+                    <div class="px-2 py-1 mx-1 bg-gray-200 rounded text-gray-600">JPG</div>
+                    <div class="px-2 py-1 ml-1 bg-gray-200 rounded text-gray-600">JPEG</div>
+                    <div class="px-2 py-1 bg-gray-200 rounded text-gray-600">GIF</div>
+                  </div>
+                  <div class="my-5 upload-box-title-input">
+                    <!--            <img src="/images/upload-icon.png">-->
+                    <div
+                      class="flex m-auto w-32 border-2 py-2 px-1 rounded-lg border-solid border-gray-500 text-gray-600 bg-gray-200 justify-center  text-sm">
                       <i class="fal fa-upload"></i>
                       <div class=" mr-2">آپلود تصویر</div>
                     </div>
-                    <input ref="upload" accept="image/jpeg,png" type="file" hidden @change="onFile">
+                    <input ref="slider" accept="image/jpeg,png" multiple type="file" hidden @change="onFileSlider">
                     <img src=""/>
                   </div>
-                  <img
-                    v-if="base64"
-                    ref="upload-placeholder"
-                    alt=""
-                    class="w-full  h-full upload-placeholder rounded-lg absolute inset-0"
-                    :src="base64"
-                    @click="onUploadClicked"
-                  >
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="space-y-1">
+            <label class="font-medium">ویدیو محصول</label>
+            <div class="sm:w-full items-center text-center">
+              <div class="p-2  upload-box-title-box rounded-lg bg-gray-100 text-center  relative"
+                   @click="onUploadClickedVideo">
+                <div class="p-10 text-center flex flex-col border-2 border-dashed border-gray-500 rounded-lg">
+                  <div class="upload-box-title-text text-gray-700 ir-medium text-sm">
+                    ویدیو محصول
+                  </div>
+                  <div class="my-3 text-gray-600 text-sm">فرمت‌های فایل مورد پذیرش برای ویدئو (حداکثر حجم مورد پذیرش: ۱۰
+                    مگابایت)
+                  </div>
+                  <div class="my-3 flex justify-center">
+                    <div class="px-2 py-1 bg-gray-200 rounded text-gray-600">MP4</div>
+                  </div>
+                  <div class="my-5 upload-box-title-input">
+                    <div
+                      class="flex m-auto w-32 border-2 py-2 px-1 rounded-lg border-solid border-gray-500 text-gray-600 bg-gray-200 justify-center  text-sm">
+                      <i class="fal fa-upload"></i>
+                      <div class=" mr-2">آپلود ویدئو</div>
+                    </div>
+                    <input ref="video" accept="video/*" multiple type="file" hidden @change="onFileVideo">
+                  </div>
+
                 </div>
               </div>
             </div>
@@ -56,17 +137,18 @@
           </div>
 
           <div class="mt-6 mb-6">
-            <label for="movie">انتخاب دسته بندی</label>
+            <label>انتخاب محصول</label>
             <select
               id="movie"
-              v-model="category"
+              v-model="portfolio.product_id"
               name="movie"
               class="w-full rounded-lg border-2 border-gray-500 border-solid"
 
             >
-              <option v-for="(i , index) in category" :key="index" :value="i.id" >{{i.name}}</option>
+              <option v-for="(i , index) in getProducts" :key="index" :value="i.id">{{ i.title }}</option>
             </select>
           </div>
+
 
           <button type="submit"
                   class="py-3 w-full flex justify-center items-center bg-[#4B1752] text-white font-bold rounded hover:bg-[#2C0531]"
@@ -100,35 +182,95 @@
 import Price from "~/components/shoppingCard/price";
 
 export default {
-  name: "addNewProduct",
+  name: "add",
   layout:'admin',
   components: {Price},
   data() {
     return {
+
       editModal: '',
       deleteModal: '',
-      base64: null,
+      base64: '',
       name:null,
+      product_id:"",
+      videos: [],
+      sliders: [],
+      portfolio: {
+        name: "",
+        description: "",
+        images: [],
+        videos: [],
+        project_name: "",
+        comment: "",
+        product_id: "",
+      },
+
     }
   },
   methods: {
-    onUploadClicked () {
+    onUploadClickedVideo() {
+      this.$refs.video.click()
+    },
+    onUploadClickedSlider() {
+      this.$refs.slider.click()
+    },
+    onUploadClicked() {
       this.$refs.upload.click()
     },
-    async onFileDrop (e) {
+    async onFileDropSlider(e) {
       const base64 = await this.$toBase64(e.target.files[0])
       this.base64 = base64.data
       const data = new FormData()
       data.set('file_type', base64.type)
       data.set('base64_file', base64.base64)
-      // this.$axios.$post('/upload_file', data)
-      //     .then((response) => {
-      //         this.course.course_image = response.file
-      //     })
-      //     .catch((error) => {
-      //     })
     },
-    async onFile (e) {
+    async onFileDropVideo(e) {
+      const base64 = await this.$toBase64(e.target.files[0])
+      this.base64 = base64.data
+      const data = new FormData()
+      data.set('file_type', base64.type)
+      data.set('base64_file', base64.base64)
+    },
+    async onFileDrop(e) {
+      const base64 = await this.$toBase64(e.target.files[0])
+      this.base64 = base64.data
+      const data = new FormData()
+      data.set('file_type', base64.type)
+      data.set('base64_file', base64.base64)
+    },
+    async onFileVideo(e) {
+      const file = e.target.files[0];
+      const base64 = await this.$toBase64(e.target.files[0])
+      this.videos.push(base64.data)
+      const data = new FormData()
+      data.set('file_type', base64.type)
+      data.set('base64_file', base64.base64)
+      const dataForm = new FormData();
+      dataForm.set('file', file);
+      this.$store.dispatch('latestArticles/uploadImage', dataForm)
+        .then((response) => {
+          this.portfolio.videos.push(response.url)
+        })
+        .catch((error) => {
+        })
+    },
+    async onFileSlider(e) {
+      const file = e.target.files[0];
+      const base64 = await this.$toBase64(e.target.files[0])
+      this.videos.push(base64.data)
+      const data = new FormData()
+      data.set('file_type', base64.type)
+      data.set('base64_file', base64.base64)
+      const dataForm = new FormData();
+      dataForm.set('file', file);
+      this.$store.dispatch('latestArticles/uploadImage', dataForm)
+        .then((response) => {
+          this.portfolio.images.push(response.url)
+        })
+        .catch((error) => {
+        })
+    },
+    async onFile(e) {
       const file = e.target.files[0];
       const base64 = await this.$toBase64(e.target.files[0])
       this.base64 = base64.data
@@ -139,30 +281,39 @@ export default {
       dataForm.set('file', file);
       this.$store.dispatch('latestArticles/uploadImage', dataForm)
         .then((response) => {
-          this.image = response
+          this.portfolio.thumbnail = response.url
         })
         .catch((error) => {
         })
     },
-    save(){
-      this.$store.dispatch('applications/createusage', {
-        name:this.name,
-        image_id:this.image ? this.image.id :null,
-      })
-        .then(res=>{
-          alert("کاربرد با موفقیت ایجاد شد")
+
+    async save() {
+      await this.$store.dispatch('video/createPortfolios', this.portfolio)
+        .then(res => {
+          this.$router.replace('/admin/portfolios/list')
+
         })
-        .catch(async err=>{
+        .catch(err =>
           alert("در ایجاد کاربرد مشکلی به وجود آمده است")
-        })
+        )
+    },
+    validate() {
+      if (this.portfolio.title !== "" && this.portfolio.description !== "") {
+        this.save();
+      } else {
+        alert("something went wrong")
+      }
+    },
+    getProduct() {
+      this.$store.dispatch('product/addNewProduct/getProducts')
     },
   },
   mounted(){
-    this.getCategory()
+    this.getProduct()
   },
   computed:{
-    category(){
-      return this.$store.getters['latestArticles/getCategories']
+    getProducts(){
+      return this.$store.getters['product/addNewProduct/getProducts']
     }
   }
 }

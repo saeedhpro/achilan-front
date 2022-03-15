@@ -88,7 +88,9 @@ export default {
           answer : this.answer
         }
       )
-      .then(res=>{})
+      .then(res=>{
+        this.$router.replace('/admin/faq/list')
+      })
       .catch(err=>{})
 
     },

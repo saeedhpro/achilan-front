@@ -72,7 +72,10 @@
             </td>
 
             <td class="p-3 text-center">
-              <img class="w-20 h-20 rounded-lg" v-if="item.video" :src="item.thumbnail"/>
+<!--              <img class="w-20 h-20 rounded-lg" v-if="item.thumbnail" :src="item.thumbnail"/>-->
+              <video class="w-20 h-20 rounded-lg block" controls v-if="item.url">
+                <source :src="item.url" type="video/mp4" >
+              </video>
             </td>
 
             <td class="p-3 space-x-2 space-x-reverse text-center">

@@ -50,6 +50,6 @@ export const actions = {
 export const getters = {
 
   getFaqs(state) {
-    return state.faq
+    return state.faqs
   },
 }

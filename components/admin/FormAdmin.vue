@@ -26,7 +26,7 @@
       </div>
 
       <div class="mt-6 mb-6">
-        <label for="description">توضیحات مقاله</label>
+        <label>توضیحات مقاله</label>
         <client-only placeholder="loading...">
           <ckeditor-nuxt id="description" v-model="body" :config="editorConfig"/>
         </client-only>
@@ -254,7 +254,8 @@ export default {
         tags: this.tags
       })
         .then(res => {
-          alert("مقاله با موفقیت ایجاد شد")
+          this.$router.replace('/admin/blog')
+
         })
         .catch(async err => {
           alert("در ایجاد مقاله مشکلی به وجود آمده است")

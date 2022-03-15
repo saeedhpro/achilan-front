@@ -89,7 +89,7 @@
             <ul role="list" class="py-5 grid grid-cols-2 gap-3 sm:grid-cols-2 md:grid-cols-4">
 
               <li class="col-span-1">
-                <a href="/technicalInformation"
+                <nuxt-link to="/files?name=technicals"
                    class="mb-2 px-6.5 py-3 flex justify-center block bg-[#F8F9FD] border border-black text-sm items-center rounded shadow-sm hover:text-gray-800 hover:bg-[#FFFAEB] hover:border-[#2C0531] hover:shadow">
                   <svg xmlns="http://www.w3.org/2000/svg" width="19.022" height="20" viewBox="0 0 19.022 20">
                     <defs>
@@ -113,10 +113,10 @@
                     </g>
                   </svg>
                   <span class="mr-1">اطلاعات فنی</span>
-                </a>
+                </nuxt-link>
               </li>
               <li class="col-span-1">
-                <a href="/magazines"
+                <nuxt-link to="/files?name=catalogs"
                    class="mb-2 px-6.5 py-3 flex justify-center block bg-[#F8F9FD] border border-black text-sm items-center rounded shadow-sm hover:text-gray-800 hover:bg-[#FFFAEB] hover:border-[#2C0531] hover:shadow">
                   <svg xmlns="http://www.w3.org/2000/svg" width="17.5" height="20" viewBox="0 0 17.5 20">
                     <defs>
@@ -134,10 +134,10 @@
                     <path class="b2" d="M77.75,384v2.5H65.25a1.25,1.25,0,0,1,0-2.5Z" transform="translate(-61.5 -369)"/>
                   </svg>
                   <span class="mr-1">مجله ها</span>
-                </a>
+                </nuxt-link>
               </li>
               <li class="col-span-1">
-                <a href="licenses"
+                <nuxt-link to="/files?name=permissions"
                    class="mb-2 px-6.5 py-3 flex justify-center block bg-[#F8F9FD] border border-black text-sm items-center rounded shadow-sm hover:text-gray-800 hover:bg-[#FFFAEB] hover:border-[#2C0531] hover:shadow">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                     <defs>
@@ -162,10 +162,10 @@
                     </g>
                   </svg>
                   <span class="mr-1">مجوز ها</span>
-                </a>
+                </nuxt-link>
               </li>
               <li class="col-span-1">
-                <a href="/maps"
+                <nuxt-link to="/files?name=maps"
                    class="mb-2 px-6.5 py-3 flex justify-center block bg-[#F8F9FD] border border-black text-sm items-center rounded shadow-sm hover:text-gray-800 hover:bg-[#FFFAEB] hover:border-[#2C0531] hover:shadow">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17.5" viewBox="0 0 20 17.5">
                     <defs>
@@ -190,7 +190,7 @@
                     </g>
                   </svg>
                   <span class="mr-1"> نقشه ها</span>
-                </a>
+                </nuxt-link>
               </li>
 
             </ul>

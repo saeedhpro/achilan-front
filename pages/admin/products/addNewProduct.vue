@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen bg-[#F7F8FA]">
+  <div class="bg-[#F7F8FA]">
 
     <div class="mx-auto py-6 px-5 max-w-7xl">
 
@@ -179,6 +179,9 @@
             </div>
 
           </div>
+          <div v-for="i in sliders">
+            <img :src="i.images">
+          </div>
 
           <div class="space-y-1">
             <label class="font-medium">ویدیو محصول</label>
@@ -187,7 +190,7 @@
                    @click="onUploadClickedVideo">
                 <div class="p-10 text-center flex flex-col border-2 border-dashed border-gray-500 rounded-lg">
                   <div class="upload-box-title-text text-gray-700 ir-medium text-sm">
-                    تصویر اسلایدر
+                    ویدیو محصول
                   </div>
                   <div class="my-3 text-gray-600 text-sm">فرمت‌های فایل مورد پذیرش برای ویدئو (حداکثر حجم مورد پذیرش: ۱۰
                     مگابایت)
@@ -456,7 +459,6 @@ export default {
     async save_product() {
       await this.$store.dispatch('product/addNewProduct/saveProduct', this.product)
         .then(res => {
-          console.log('atie')
         })
         .catch(err => console.log(err))
     },

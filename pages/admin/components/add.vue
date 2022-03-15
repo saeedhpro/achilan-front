@@ -15,6 +15,20 @@
                    type="text" placeholder="عنوان محصول"/>
           </div>
 
+          <div class="mt-6 mb-6">
+            <label>انتخاب دسته بندی</label>
+            <select
+              id="movie"
+              v-model="category_id"
+              name="movie"
+              class="w-full rounded-lg border-2 border-gray-500 border-solid"
+
+            >
+              <option v-for="(i , index) in getCategories" :key="index" :value="i.id">{{ i.name }}</option>
+            </select>
+          </div>
+
+
 
           <div class="space-y-1">
             <label class="font-medium">تصویر محصول</label>
@@ -96,6 +110,7 @@ export default {
       deleteModal: '',
       base64: null,
       name:null,
+      category_id: null,
     }
   },
   methods: {
@@ -135,15 +150,22 @@ export default {
       this.$store.dispatch('ingredients/createComponent', {
         name:this.name,
         image_id:this.image ? this.image.id :null,
+        category_id: this.category_id,
       })
         .then(res=>{
-          alert("اجزا با موفقیت ایجاد شد")
+          this.$router.replace('/admin/components/list')
+
         })
         .catch(async err=>{
           alert("در ایجاد اجزا مشکلی به وجود آمده است")
         })
     },
 
+  },
+  computed: {
+    getCategories() {
+      return this.$store.getters['inquiry/getCategories']
+    }
   }
 }
 </script>

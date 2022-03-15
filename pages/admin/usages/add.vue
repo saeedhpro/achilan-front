@@ -126,7 +126,7 @@ export default {
       dataForm.set('file', file);
       this.$store.dispatch('latestArticles/uploadImage', dataForm)
         .then((response) => {
-          this.image = response
+          this.image = response.url
         })
         .catch((error) => {
         })
@@ -134,10 +134,10 @@ export default {
     save(){
       this.$store.dispatch('applications/createusage', {
         name:this.name,
-        image_id:this.image ? this.image.id :null,
+        thumbnail:this.image,
       })
         .then(res=>{
-          alert("کاربرد با موفقیت ایجاد شد")
+          this.$router.replace('/admin/usages/list')
         })
         .catch(async err=>{
           alert("در ایجاد کاربرد مشکلی به وجود آمده است")

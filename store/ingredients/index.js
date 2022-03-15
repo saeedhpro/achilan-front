@@ -4,8 +4,10 @@ export const state = () => ({
   ingredients: [],
   ingredient: null,
   frames:[],
+  operators:[],
   glass_type:[],
-  products:[]
+  products:[],
+  glasses:[]
 })
 
 export const mutations = {
@@ -25,18 +27,24 @@ export const mutations = {
   setProducts(state, products) {
     state.products = products
   },
+  setGlasses(state, glasses) {
+    state.glasses = glasses
+  },
+  setOperators(state,operators ) {
+    state.operators = operators
+  },
 }
 
 export const actions = {
 
   getIngredients(context) {
-    return this.$axios.get("/components")
+    return this.$axios.get('/components')
       .then((res) => {
         if (res.status === 401) {
           throw new Error('Bad credentials')
         } else {
           context.commit('setIngredients', res.data.data)
-          return Promise.resolve(res.data)
+          return Promise.resolve(res.data.data)
         }
       })
       .catch(err => {
@@ -58,13 +66,43 @@ export const actions = {
       })
   },
   getFrames(context) {
-    return this.$axios.get("/frames")
+    return this.$axios.get('/frames')
       .then((res) => {
         if (res.status === 401) {
           throw new Error('Bad credentials')
         } else {
           context.commit('setFrames', res.data.data)
           console.log(res.data, 'setFrames')
+          return Promise.resolve(res.data)
+        }
+      })
+      .catch(err => {
+        return Promise.reject(err)
+      })
+  },
+  getOperators(context) {
+    return this.$axios.get('/operators')
+      .then((res) => {
+        if (res.status === 401) {
+          throw new Error('Bad credentials')
+        } else {
+          context.commit('setOperators', res.data.data)
+          console.log(res.data, 'setOperators')
+          return Promise.resolve(res.data)
+        }
+      })
+      .catch(err => {
+        return Promise.reject(err)
+      })
+  },
+  getGlasses(context) {
+    return this.$axios.get('/glasses')
+      .then((res) => {
+        if (res.status === 401) {
+          throw new Error('Bad credentials')
+        } else {
+          context.commit('setGlasses', res.data.data)
+          console.log(res.data, 'setGlasses')
           return Promise.resolve(res.data)
         }
       })
@@ -128,6 +166,32 @@ export const actions = {
         return Promise.reject(err)
       })
   },
+  createOperators(context , data) {
+    return this.$axios.post('/operators' , data)
+      .then((res) => {
+        if (res.status === 401) {
+          throw new Error('Bad credentials')
+        } else {
+          return Promise.resolve(res.data)
+        }
+      })
+      .catch(err => {
+        return Promise.reject(err)
+      })
+  },
+  createGlasses(context , data) {
+    return this.$axios.post('/glasses' , data)
+      .then((res) => {
+        if (res.status === 401) {
+          throw new Error('Bad credentials')
+        } else {
+          return Promise.resolve(res.data)
+        }
+      })
+      .catch(err => {
+        return Promise.reject(err)
+      })
+  },
 
 
 }
@@ -148,5 +212,11 @@ export const getters = {
   },
   getProducts(state) {
     return state.products
+  },
+  getGlasses(state) {
+    return state.glasses
+  },
+  getOperators(state) {
+    return state.operators
   },
 }

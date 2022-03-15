@@ -32,10 +32,10 @@
             </th>
 
             <th class="p-3 text-white font-bold text-sm tracking-wider uppercase text-center">
-              توضیحات محصول
+              نوع محصول
             </th>
             <th class="p-3 text-white font-bold text-sm tracking-wider uppercase text-center">
-              Actions
+              عملیات
             </th>
           </tr>
           </thead>
@@ -78,7 +78,7 @@
             <td class="p-3 text-center">
               <div
                 class="font-bold inline-flex px-2 py-1 leading-4 text-xs rounded-full text-green-700 bg-green-200">
-                {{ i.description}}
+                {{ i.created_at}}
               </div>
             </td>
             <td class="p-3 space-x-2 space-x-reverse text-center">

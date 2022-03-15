@@ -23,7 +23,7 @@
                    @click="onUploadClicked">
                 <div class="p-10 text-center flex flex-col border-2 border-dashed border-gray-500 rounded-lg">
                   <div class="upload-box-title-text text-gray-700 ir-medium text-sm">
-                    تصویر مقاله
+                    تصویر ویدیو
                   </div>
                   <div class="my-3 text-gray-600 text-sm">فرمت‌های فایل مورد پذیرش برای تصویر (حداکثر حجم مورد پذیرش: ۱۰ مگابایت)</div>
                   <div class="my-3 flex justify-center">
@@ -59,7 +59,7 @@
             <label>انتخاب دسته بندی</label>
             <select
               id="movie"
-              v-model="category"
+              v-model="category_id"
               name="movie"
               class="w-full rounded-lg border-2 border-gray-500 border-solid"
 
@@ -109,6 +109,7 @@ export default {
       deleteModal: '',
       base64: null,
       name:null,
+      category_id:null,
     }
   },
   methods: {

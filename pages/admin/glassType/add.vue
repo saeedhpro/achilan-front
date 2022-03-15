@@ -81,7 +81,7 @@ export default {
       product: {
         title: "",
         description: "",
-        image: [],
+        images: [],
         thumbnail: "",
         type_id: null,
         usage_id: null,

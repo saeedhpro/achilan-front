@@ -3,7 +3,7 @@
     <div class="mx-auto pb-6 px-5 max-w-7xl">
       <div class="flex">
 
-        <div class="px-3 w-1/3 max-h-[30rem] bg-[#282828] overflow-auto rounded">
+        <div class="px-3 lg:w-1/3 w-full max-h-[30rem] bg-[#282828] overflow-auto rounded">
 
           <div v-for="item in videos" :key="videos" @click="setInfo(item)"
                class="flex items-center border-b hover:bg-gray-600">
@@ -11,7 +11,9 @@
             <div class="p-3  w-1/3">
               <img class="h-24 w-full block rounded" :src=item.thumbnail>
 <!--              <video-player class="h-24 w-full block rounded" :src="item.image"/>-->
-
+              <video class="w-full block h-[30rem] rounded" controls v-if="item.url">
+                <source :src="item.url" type="video/mp4">
+              </video>
             </div>
 
             <div class="w-2/3 text-white">
@@ -23,7 +25,7 @@
 
         </div>
 
-        <div class="pr-3 flex-1 md:pr-6">
+        <div class="pr-3 flex-1 md:pr-6 lg:flex hidden">
 <!--          <video-player :src="imgsrc" class="w-full block h-[30rem] rounded"/>-->
 <!--          <video-player class="w-full block h-[30rem] rounded" :src=""/>-->
           <video class="w-full block h-[30rem] rounded" controls v-if="video">

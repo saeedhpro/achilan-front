@@ -2,7 +2,7 @@
 
   <div>
     <main-header></main-header>
-    <technical-information></technical-information>
+    <file-information></file-information>
     <main-footer></main-footer>
 
   </div>
@@ -11,16 +11,15 @@
 
 <script>
 import mainHeader from '@/components/header/mainHeader';
-import technicalInformation from "~/components/technicalInfo/technicalInformation";
 import mainFooter from "~/components/footer/mainFooter";
+import FileInformation from "~/components/fileInfo/fileInformation";
 
 export default {
   name: "index",
   components: {
+    FileInformation,
     mainHeader,
-    technicalInformation,
     mainFooter,
-
   }
 }
 </script>

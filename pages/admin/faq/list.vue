@@ -3,7 +3,7 @@
 
     <div class="mx-auto py-6 px-5 max-w-7xl">
 
-      <h3 class="mr-2 py-2 font-bold text-xl underline decoration-4 decoration-[#FFB508] underline-offset-1">مدیریت محصولات</h3>
+      <h3 class="mr-2 py-2 font-bold text-xl underline decoration-4 decoration-[#FFB508] underline-offset-1">سوالات متداول</h3>
 
       <!--add product-->
       <div class="py-6">
@@ -28,7 +28,7 @@
               پاسخ
             </th>
             <th class="p-3 text-white font-bold text-sm tracking-wider uppercase text-center">
-              Actions
+              عملیات
             </th>
           </tr>
           </thead>

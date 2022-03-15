@@ -1,7 +1,7 @@
 <template>
   <div class="bg-[#F7F8FA]">
     <!--header-->
-    <header class="pb-5 mx-auto px-5 max-w-7xl">
+    <header class="pb-5 mx-auto lg:px-5 px-2 lg:max-w-7xl max-w-5xl">
 
       <!-- Topbar -->
       <div class="border-b">
@@ -9,12 +9,12 @@
 
           <!-- Navigation -->
           <div>
-            <nav class="text-sm md:text-base space-x-4 space-x-reverse">
-              <a href="/FAQ" class="text-sm font-medium text-gray-900 hover:text-gray-500">سوالات متداول</a>
-              <a href="/blog" class="text-sm font-medium text-gray-900 hover:text-gray-500">مقالات</a>
-              <a href="/gallery" class="text-sm font-medium text-gray-900 hover:text-gray-500">گالری ویدیو</a>
-              <a href="/aboutUs" class="text-sm font-medium text-gray-900 hover:text-gray-500">درباره ما</a>
-              <a href="/connectUs" class="text-sm font-medium text-gray-900 hover:text-gray-500">تماس با ما</a>
+            <nav class="lg:text-sm text-xs md:text-base lg:space-x-4 space-x-1 space-x-reverse">
+              <a href="/FAQ" class="lg:text-sm text-xs font-medium text-gray-900 hover:text-gray-500">سوالات متداول</a>
+              <a href="/blog" class="lg:text-sm text-xs font-medium text-gray-900 hover:text-gray-500">مقالات</a>
+              <a href="/gallery" class="lg:text-sm text-xs font-medium text-gray-900 hover:text-gray-500">گالری ویدیو</a>
+              <a href="/aboutUs" class="lg:text-sm text-xs font-medium text-gray-900 hover:text-gray-500">درباره ما</a>
+              <a href="/connectUs" class="lg:text-sm text-xs font-medium text-gray-900 hover:text-gray-500">تماس با ما</a>
             </nav>
           </div>
           <!-- END Navigation -->
@@ -33,10 +33,10 @@
 
         <!-- Navigation -->
         <div>
-          <nav class="text-sm md:text-base space-x-4 space-x-reverse">
-            <a href="/products/types" class="text-sm font-medium text-gray-900 hover:text-gray-500">انواع درب های اتوماتیک</a>
-            <a href="/products/application" class="text-sm font-medium text-gray-900 hover:text-gray-500">کاربردهای درب اتوماتیک</a>
-            <a href="/ingredients" class="text-sm font-medium text-gray-900 hover:text-gray-500">اجزای درب اتوماتیک</a>
+          <nav class="lg:text-sm text-xs lg:text-base lg:space-x-4 space-x-1 space-x-reverse">
+            <a href="/products/types" class="lg:text-sm text-xs font-medium text-gray-900 hover:text-gray-500">انواع درب های اتوماتیک</a>
+            <a href="/products/application" class="lg:text-sm text-xs font-medium text-gray-900 hover:text-gray-500">کاربردهای درب اتوماتیک</a>
+            <a href="/ingredients" class="lg:text-sm text-xs font-medium text-gray-900 hover:text-gray-500">اجزای درب اتوماتیک</a>
           </nav>
         </div>
         <!-- END Navigation -->

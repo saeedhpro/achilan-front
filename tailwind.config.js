@@ -53,9 +53,9 @@ module.exports = {
         "components/price/inquiry.vue",
         "components/price/result.vue",
 
-        // technicalInformation
-        "pages/technicalInformation/index.vue",
-        "components/technicalInfo/technicalInformation.vue",
+        // files
+        "pages/files/index.vue",
+        "components/technicalInfo/files.vue",
 
         // connect us
         "pages/connectUs/index.vue",

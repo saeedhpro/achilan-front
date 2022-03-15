@@ -10,6 +10,8 @@
   <nuxt-link to="/admin/usages/list">لیست کاربردهای درب اتوماتیک</nuxt-link>
   <nuxt-link to="/admin/components/list">لیست اجزا درب اتوماتیک</nuxt-link>
   <nuxt-link to="/admin/frame/list">لیست فریم</nuxt-link>
+  <nuxt-link to="/admin/glasses/list">لیست نوع شیشه</nuxt-link>
+  <nuxt-link to="/admin/operators/list">لیست اپراتورها</nuxt-link>
 <!--  <nuxt-link to="/admin/Grouping">دسته بندی</nuxt-link>-->
 <!--  <nuxt-link to="/admin/Comments">نظرات کاربران</nuxt-link>-->
 <!--  <nuxt-link to="/admin/NewsLetters">خبرنامه</nuxt-link>-->
